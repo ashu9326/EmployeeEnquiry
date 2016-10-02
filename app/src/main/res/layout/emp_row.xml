@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:id="@+id/textViewId"
+        android:layout_margin="15dp"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@id/textViewId"
+        android:id="@+id/textViewName"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="Jimi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:id="@+id/textViewPost"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="Manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSalary"
+        android:layout_toRightOf="@+id/textViewId"
+        android:layout_toEndOf="@+id/textViewId" />
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:id="@+id/textViewSalary"
+        android:textSize="14sp"
+        android:text="80000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewName"
+        android:layout_toRightOf="@+id/textViewId"
+        android:layout_toEndOf="@+id/textViewId" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:checked="false"
+        android:layout_alignTop="@+id/textViewName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
